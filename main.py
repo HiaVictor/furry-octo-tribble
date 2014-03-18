@@ -123,12 +123,27 @@ class FrcScouting(wx.Frame):
         self.truss_shots_tel_sub.Bind(wx.EVT_BUTTON, self.TrussShotsTelSub)
         self.catches_tel_add.Bind(wx.EVT_BUTTON, self.CatchesTelAdd)
         self.catches_tel_sub.Bind(wx.EVT_BUTTON, self.CatchesTelSub)
+        self.save_data.Bind(wx.EVT_BUTTON, self.SaveData)
         
         self.Show()  
       
     def SaveData(self, event):
-        pass
-        
+        data_interactions.matches_played = self.matches_played
+        data_interactions.start_position = self.start_position
+        data_interactions.preloaded_ball = self.preloaded_ball
+        data_interactions.high_goals_made_auto = self.high_goals_made_auto
+        data_interactions.low_goals_made_auto = self.low_goals_made_auto
+        data_interactions.shots_missed_auto = self.shots_missed_auto
+        data_interactions.hot_goal_bonus_auto = self.hot_goal_bonus_auto
+        data_interactions.moved_bonus_auto = self.moved_bonus_auto
+        data_interactions.high_goals_made_tel = self.high_goals_made_auto
+        data_interactions.low_goals_made_tel = self.low_goals_made_tel
+        data_interactions.shots_missed_tel = self.shots_missed_tel
+        data_interactions.balls_received_tel = self.balls_passed_tel
+        data_interactions.balls_passed_tel = self.balls_passed_tel
+        data_interactions.truss_shots_tel = self.truss_shots_tel
+        data_interactions.catches_tel = self.catches_tel
+          
     def CatchesTelAdd(self, event):
         self.catches_tel += int(1)
         self.catches_tel_label.Label='Catches Tele: ' + str(self.catches_tel)
