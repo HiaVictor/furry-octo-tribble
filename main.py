@@ -22,10 +22,7 @@ class FrcScouting(wx.Frame):
         self.balls_passed_tel = 0
         self.truss_shots_tel = 0
         self.catches_tel = 0
-        self.devensive_maneuvers_tel = 0
-        self.balls_loss_tel = 0
-    
-        
+          
         super(FrcScouting, self).__init__(parent, title=title, size=(1024, 400))  
         self.pnl = wx.Panel(self)
         self.title = wx.StaticText(self.pnl, label='2168 Scouting System', pos=(445,10))
@@ -94,6 +91,10 @@ class FrcScouting(wx.Frame):
         self.truss_shots_tel_label = wx.StaticText(self.match_scout_obj, label='Truss Shots Tele: 0', pos=(410,170))
         self.truss_shots_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(460,190))
         self.truss_shots_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(410,190))
+        self.catches_tel_label = wx.StaticText(self.match_scout_obj, label='Catches Tele: 0', pos=(410,220))
+        self.catches_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(460,240))
+        self.catches_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(410,240))
+        self.save_data = wx.Button(self.match_scout_obj, label='Save Data', pos=(580,240))
         self.match_scout_obj.Hide()
         
         self.start_preloaded_ball_yes.Bind(wx.EVT_CHECKBOX, self.PreloadedBallYesCheckBox)
@@ -120,7 +121,21 @@ class FrcScouting(wx.Frame):
         self.balls_passed_tel_sub.Bind(wx.EVT_BUTTON, self.BallsPassedTelSub)
         self.truss_shots_tel_add.Bind(wx.EVT_BUTTON, self.TrussShotsTelAdd)
         self.truss_shots_tel_sub.Bind(wx.EVT_BUTTON, self.TrussShotsTelSub)
+        self.catches_tel_add.Bind(wx.EVT_BUTTON, self.CatchesTelAdd)
+        self.catches_tel_sub.Bind(wx.EVT_BUTTON, self.CatchesTelSub)
+        
         self.Show()  
+      
+    def SaveData(self, event):
+        pass
+        
+    def CatchesTelAdd(self, event):
+        self.catches_tel += int(1)
+        self.catches_tel_label.Label='Catches Tele: ' + str(self.catches_tel)
+        
+    def CatchesTelSub(self, event):
+        self.catches_tel -= int(1)
+        self.catches_tel_label.Label='Catches Tele: ' + str(self.catches_tel)
         
     def TrussShotsTelAdd(self, event):
         self.truss_shots_tel += int(1)
