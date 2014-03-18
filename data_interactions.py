@@ -45,6 +45,11 @@ def SaveData(team_number):
     for team in root.findall('team'):
         if team.find('number').text == team_number:
             
+            
+            
+            global preloaded_ball
+            preloaded_ball = str(preloaded_ball) + ',' + str(team.find('preloaded_ball').text)
+            
             global start_position
             start_position = str(start_position) + ',' + str(team.find('start_position').text)
             
@@ -83,7 +88,5 @@ def SaveData(team_number):
             
             global high_goals_made_auto
             high_goals_made_auto += int(team.find('high_goals_made_auto').text)
-            
-            print start_position
             
             
