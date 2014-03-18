@@ -85,6 +85,15 @@ class FrcScouting(wx.Frame):
         self.shots_missed_tel_label = wx.StaticText(self.match_scout_obj, label='Shots Missed Tele: 0', pos=(230,210))
         self.shots_missed_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(280,230))  
         self.shots_missed_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(230,230))    
+        self.balls_recieved_tel_label = wx.StaticText(self.match_scout_obj, label='Balls Received Tele: 0', pos=(410,50))
+        self.balls_received_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(460,70))
+        self.balls_received_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(410,70))
+        self.balls_passed_tel_label = wx.StaticText(self.match_scout_obj, label='Balls Passed Tele: 0', pos=(410,110))
+        self.balls_passed_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(460,130))
+        self.balls_passed_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(410,130))
+        self.truss_shots_tel_label = wx.StaticText(self.match_scout_obj, label='Truss Shots Tele: 0', pos=(410,170))
+        self.truss_shots_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(460,190))
+        self.truss_shots_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(410,190))
         self.match_scout_obj.Hide()
         
         self.start_preloaded_ball_yes.Bind(wx.EVT_CHECKBOX, self.PreloadedBallYesCheckBox)
@@ -104,9 +113,40 @@ class FrcScouting(wx.Frame):
         self.low_goals_made_tel_add.Bind(wx.EVT_BUTTON, self.LowGoalsMadeTelAdd)
         self.low_goals_made_tel_sub.Bind(wx.EVT_BUTTON, self.LowGoalsMadeTelSub)
         self.shots_missed_tel_add.Bind(wx.EVT_BUTTON, self.ShotsMissedTelAdd)
-        self.shots_missed_tel_sub.Bind(wx.EVT_BUTTON, self.ShotsMissedTelSub)     
+        self.shots_missed_tel_sub.Bind(wx.EVT_BUTTON, self.ShotsMissedTelSub) 
+        self.balls_received_tel_add.Bind(wx.EVT_BUTTON, self.BallsReceivedTelAdd)
+        self.balls_received_tel_sub.Bind(wx.EVT_BUTTON, self.BallsReceivedTelSub)
+        self.balls_passed_tel_add.Bind(wx.EVT_BUTTON, self.BallsPassedTelAdd)
+        self.balls_passed_tel_sub.Bind(wx.EVT_BUTTON, self.BallsPassedTelSub)
+        self.truss_shots_tel_add.Bind(wx.EVT_BUTTON, self.TrussShotsTelAdd)
+        self.truss_shots_tel_sub.Bind(wx.EVT_BUTTON, self.TrussShotsTelSub)
         self.Show()  
-     
+        
+    def TrussShotsTelAdd(self, event):
+        self.truss_shots_tel += int(1)
+        self.truss_shots_tel_label.Label='Truss Shots Tele: ' + str(self.truss_shots_tel)
+    
+    def TrussShotsTelSub(self, event):
+        self.truss_shots_tel -= int(1)
+        self.truss_shots_tel_label.Label='Truss Shots Tele: ' + str(self.truss_shots_tel)
+        
+    def BallsPassedTelSub(self, event):
+        self.balls_passed_tel -= int(1)
+        self.balls_passed_tel_label.Label='Balls Passed Tele: ' + str(self.balls_passed_tel)
+        
+    def BallsPassedTelAdd(self, event):
+        self.balls_passed_tel += int(1)
+        self.balls_passed_tel_label.Label='Balls Passed Tele: ' + str(self.balls_passed_tel)
+        
+    def BallsReceivedTelAdd(self, event):
+        self.balls_received_tel += int(1)
+        self.balls_recieved_tel_label.Label='Balls Received Tele: ' + str(self.balls_received_tel) 
+        pass
+    
+    def BallsReceivedTelSub(self, event):
+        self.balls_received_tel -= int(1)
+        self.balls_recieved_tel_label.Label='Balls Received Tele: ' + str(self.balls_received_tel) 
+        pass
     
     def ShotsMissedTelAdd(self, event):
         self.shots_missed_tel += int(1)
