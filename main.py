@@ -56,7 +56,6 @@ class FrcScouting(wx.Frame):
         #-----Match Scout Objects-----#
         self.match_scout_obj = wx.StaticBox(self.pnl, label='Match Scout', size=wx.Size(700,300),pos=(250,30))
         self.matches_played = wx.StaticText(self.match_scout_obj, label='Matches Played: ????', pos=(50,50))
-        self.save_data = wx.Button(self.match_scout_obj, label='Save Data', pos=(600,260))
         self.start_position_label = wx.StaticText(self.match_scout_obj, label='Start Position:', pos=(50,83))
         self.start_position_cb = wx.ComboBox(self.match_scout_obj, style=wx.CB_DROPDOWN,choices=('Center','Left','Right'),pos=(130,80))
         self.start_preloaded_ball_label = wx.StaticText(self.match_scout_obj, label='Preloaded Ball:', pos=(50,120))
@@ -77,7 +76,15 @@ class FrcScouting(wx.Frame):
         self.moved_bonus_auto_label = wx.StaticText(self.match_scout_obj, label='Moved Bonus: ', pos=(230,83))
         self.moved_bonus_auto_yes = wx.CheckBox(self.match_scout_obj, label='Yes', pos=(310,83))
         self.moved_bonus_auto_no = wx.CheckBox(self.match_scout_obj, label='No', pos=(350,83))
-        #self.high_goals_made_label = wx.StaticText(self.match_scout_obj, label='High Goals Made Teleoperation: ')
+        self.high_goals_made_tel_label = wx.StaticText(self.match_scout_obj, label='High Goals Made Tele: 0', pos=(230,110))
+        self.high_goals_made_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(280,130))
+        self.high_goals_made_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(230,130))
+        self.low_goals_made_tel_label = wx.StaticText(self.match_scout_obj, label='Low Goals Made Tele: 0', pos=(230, 160))
+        self.low_goals_made_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(280,180))
+        self.low_goals_made_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(230,180))
+        self.shots_missed_tel_label = wx.StaticText(self.match_scout_obj, label='Shots Missed Tele: 0', pos=(230,210))
+        self.shots_missed_tel_add = wx.Button(self.match_scout_obj, label='+', size=(50,25), pos=(280,230))  
+        self.shots_missed_tel_sub = wx.Button(self.match_scout_obj, label='-', size=(50,25), pos=(230,230))    
         self.match_scout_obj.Hide()
         
         self.start_preloaded_ball_yes.Bind(wx.EVT_CHECKBOX, self.PreloadedBallYesCheckBox)
@@ -92,8 +99,38 @@ class FrcScouting(wx.Frame):
         self.hot_goal_bonus_no.Bind(wx.EVT_CHECKBOX, self.HotGoalNoCheckBox)
         self.moved_bonus_auto_yes.Bind(wx.EVT_CHECKBOX, self.MovedBonusYesCheckBox)
         self.moved_bonus_auto_no.Bind(wx.EVT_CHECKBOX, self.MovedBonusNoCheckBox)
-        
+        self.high_goals_made_tel_add.Bind(wx.EVT_BUTTON, self.HighGoalsMadeTeleAdd)
+        self.high_goals_made_tel_sub.Bind(wx.EVT_BUTTON, self.HighGoalsMadeTeleSub)
+        self.low_goals_made_tel_add.Bind(wx.EVT_BUTTON, self.LowGoalsMadeTelAdd)
+        self.low_goals_made_tel_sub.Bind(wx.EVT_BUTTON, self.LowGoalsMadeTelSub)
+        self.shots_missed_tel_add.Bind(wx.EVT_BUTTON, self.ShotsMissedTelAdd)
+        self.shots_missed_tel_sub.Bind(wx.EVT_BUTTON, self.ShotsMissedTelSub)     
         self.Show()  
+     
+    
+    def ShotsMissedTelAdd(self, event):
+        self.shots_missed_tel += int(1)
+        self.shots_missed_tel_label.Label='Shots Missed Tele: ' + str(self.shots_missed_tel)   
+         
+    def ShotsMissedTelSub(self, event):
+        self.shots_missed_tel -= int(1)
+        self.shots_missed_tel_label.Label='Shots Missed Tele: ' + str(self.shots_missed_tel)   
+    
+    def LowGoalsMadeTelAdd(self, event):
+        self.low_goals_made_tel += int(1)
+        self.low_goals_made_tel_label.Label='Low Goals Made Tele: ' + str(self.low_goals_made_tel)
+        
+    def LowGoalsMadeTelSub(self, event):
+        self.low_goals_made_tel -= int(1)
+        self.low_goals_made_tel_label.Label='Low Goals Made Tele: ' + str(self.low_goals_made_tel)
+    
+    def HighGoalsMadeTeleSub(self, event):
+        self.high_goals_made_tel -= int(1)
+        self.high_goals_made_tel_label.Label='High Goals Made Tele: ' + str(self.high_goals_made_tel)
+     
+    def HighGoalsMadeTeleAdd(self, event):
+        self.high_goals_made_tel += int(1)
+        self.high_goals_made_tel_label.Label='High Goals Made Tele: ' + str(self.high_goals_made_tel)
      
     def MovedBonusNoCheckBox(self, event):
         self.moved_bonus_auto_yes.SetValue(False)
