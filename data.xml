@@ -3,7 +3,7 @@
 	<team>
 		<number>2168</number>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -14,7 +14,7 @@
 		<low_goals_made_tel>0</low_goals_made_tel>
 		<shots_missed_tel>0</shots_missed_tel>
 		<balls_received_tel>0</balls_received_tel>
-		<balls_passed_tel>5</balls_passed_tel>
+		<balls_passed_tel>0</balls_passed_tel>
 		<truss_shots_tel>0</truss_shots_tel>
 		<catches_tel>0</catches_tel>
 		
@@ -25,7 +25,7 @@
 		<number>78</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -47,7 +47,7 @@
 		<number>195</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -69,7 +69,7 @@
 		<number>181</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -91,7 +91,7 @@
 		<number>125</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -113,7 +113,7 @@
 		<number>61</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -135,7 +135,7 @@
 		<number>121</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -157,7 +157,7 @@
 		<number>138</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -179,7 +179,7 @@
 		<number>190</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -201,7 +201,7 @@
 		<number>246</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -223,7 +223,7 @@
 		<number>348</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -245,7 +245,7 @@
 		<number>663</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -267,7 +267,7 @@
 		<number>1100</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -289,7 +289,7 @@
 		<number>1350</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -311,7 +311,7 @@
 		<number>1517</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -333,7 +333,7 @@
 		<number>1757</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -355,7 +355,7 @@
 		<number>1965</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -377,7 +377,7 @@
 		<number>1973</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -399,7 +399,7 @@
 		<number>2079</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -421,7 +421,7 @@
 		<number>2262</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -443,7 +443,7 @@
 		<number>2621</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -465,7 +465,7 @@
 		<number>2871</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -487,7 +487,7 @@
 		<number>3280</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -509,7 +509,7 @@
 		<number>3623</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -531,7 +531,7 @@
 		<number>3719</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -553,7 +553,7 @@
 		<number>3780</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -575,7 +575,7 @@
 		<number>3927</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -597,7 +597,7 @@
 		<number>4048</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -619,7 +619,7 @@
 		<number>4176</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -641,7 +641,7 @@
 		<number>4311</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -663,7 +663,7 @@
 		<number>4474</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -685,7 +685,7 @@
 		<number>4761</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -707,7 +707,7 @@
 		<number>4796</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -729,7 +729,7 @@
 		<number>4905</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -751,7 +751,7 @@
 		<number>4908</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -773,7 +773,7 @@
 		<number>5000</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -795,7 +795,7 @@
 		<number>5112</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
@@ -817,7 +817,7 @@
 		<number>5163</number>
 		<matches_played>0</matches_played>
 		<matches_played>0</matches_played>
-		<start_position>1</start_position>
+		<start_position>0</start_position>
 		<preloaded_ball>0</preloaded_ball>
 		<high_goals_made_auto>0</high_goals_made_auto>
 		<low_goals_made_auto>0</low_goals_made_auto>
