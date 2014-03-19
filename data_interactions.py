@@ -45,20 +45,21 @@ def SaveData(team_number):
     for team in root.findall('team'):
         if team.find('number').text == team_number:
             
+            global moved_bonus_auto
+            moved_bonus_auto = str(moved_bonus_auto) + ',' + str(team.find('moved_bonus_auto').text)
+                             
+            global hot_goal_bonus_auto
+            hot_goal_bonus_auto = str(hot_goal_bonus_auto) + ',' + str(team.find('hot_goal_bonus_auto').text)
             
+            global low_goals_made_auto
+            low_goals_made_auto += int(team.find('low_goals_made_auto').text)
             
             global preloaded_ball
             preloaded_ball = str(preloaded_ball) + ',' + str(team.find('preloaded_ball').text)
             
             global start_position
             start_position = str(start_position) + ',' + str(team.find('start_position').text)
-            
-            global matches_played
-            matches_played += int(team.find('matches_played').text)
-            
-            global balls_passed_tel 
-            balls_passed_tel += int(team.find('balls_passed_tel').text)       
-            
+             
             global catches_tel
             catches_tel += int(team.find('catches_tel').text)
             
@@ -78,15 +79,34 @@ def SaveData(team_number):
             low_goals_made_tel += int(team.find('low_goals_made_tel').text)
             
             global high_goals_made_tel
-            high_goals_made_tel += int(team.find('high_goals_made_tel').text) 
-            
+            high_goals_made_tel += int(team.find('high_goals_made_tel').text)   
+                                                        
             global shots_missed_auto
             shots_missed_auto += int(team.find('shots_missed_auto').text)
-            
-            global low_goals_made_tel
-            low_goals_made_tel += int(team.find('low_goals_made_tel').text)
             
             global high_goals_made_auto
             high_goals_made_auto += int(team.find('high_goals_made_auto').text)
             
+            team1 = next(team1 for team1 in tree.iter('team') 
+            for number in team1.iter('number') 
+            if number.text == team_number)
+            
+            team1.find('.//high_goals_made_tel').text = str(high_goals_made_tel)
+            team1.find('.//moved_bonus_auto').text = str(moved_bonus_auto)
+            team1.find('.//hot_goal_bonus_auto').text = str(hot_goal_bonus_auto)
+            team1.find('.//low_goals_made_auto').text = str(low_goals_made_auto)
+            team1.find('.//preloaded_ball').text = str(preloaded_ball)
+            team1.find('.//start_position').text = str(start_position)
+            team1.find('.//catches_tel').text = str(catches_tel)
+            team1.find('.//truss_shots_tel').text = str(truss_shots_tel)
+            team1.find('.//balls_passed_tel').text = str(balls_passed_tel)
+            team1.find('.//balls_received_tel').text = str(balls_received_tel)
+            team1.find('.//shots_missed_tel').text = str(shots_missed_tel)
+            team1.find('.//low_goals_made_tel').text = str(low_goals_made_tel)
+            team1.find('.//shots_missed_auto').text = str(shots_missed_auto)
+            team1.find('.//high_goals_made_auto').text = str(high_goals_made_auto)
+            
+            tree.write('data.xml')
+            print ("Wrote Data")
+            break        
             
