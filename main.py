@@ -124,8 +124,9 @@ class FrcScouting(wx.Frame):
         self.catches_tel_add.Bind(wx.EVT_BUTTON, self.CatchesTelAdd)
         self.catches_tel_sub.Bind(wx.EVT_BUTTON, self.CatchesTelSub)
         self.save_data.Bind(wx.EVT_BUTTON, self.SaveData)
-        
+        self.start_position_cb.Bind(wx.EVT_COMBOBOX, self.StartPositionChoice)
         self.Show()  
+      
       
     def SaveData(self, event):
         data_interactions.matches_played = self.matches_played
@@ -136,13 +137,26 @@ class FrcScouting(wx.Frame):
         data_interactions.shots_missed_auto = self.shots_missed_auto
         data_interactions.hot_goal_bonus_auto = self.hot_goal_bonus_auto
         data_interactions.moved_bonus_auto = self.moved_bonus_auto
-        data_interactions.high_goals_made_tel = self.high_goals_made_auto
+        data_interactions.high_goals_made_tel = self.high_goals_made_tel
         data_interactions.low_goals_made_tel = self.low_goals_made_tel
         data_interactions.shots_missed_tel = self.shots_missed_tel
-        data_interactions.balls_received_tel = self.balls_passed_tel
+        data_interactions.balls_received_tel = self.balls_received_tel
         data_interactions.balls_passed_tel = self.balls_passed_tel
         data_interactions.truss_shots_tel = self.truss_shots_tel
         data_interactions.catches_tel = self.catches_tel
+          
+        data_interactions.SaveData(self.team_list.GetStringSelection())
+      
+    def StartPositionChoice(self, event):
+        if self.start_position_cb.GetStringSelection() == 'Left':
+            self.start_position = int(-1)
+            
+        if self.start_position_cb.GetStringSelection() == 'Center':
+            self.start_position = int(0)
+            
+        if self.start_position_cb.GetStringSelection() == 'Right':
+            self.start_position = int(1)
+        pass
           
     def CatchesTelAdd(self, event):
         self.catches_tel += int(1)
@@ -205,18 +219,22 @@ class FrcScouting(wx.Frame):
     def MovedBonusNoCheckBox(self, event):
         self.moved_bonus_auto_yes.SetValue(False)
         self.moved_bonus_auto_no.SetValue(True)
+        self.moved_bonus_auto = int(0)
      
     def MovedBonusYesCheckBox(self, event):
         self.moved_bonus_auto_yes.SetValue(True)
         self.moved_bonus_auto_no.SetValue(False)
+        self.moved_bonus_auto = int(1)
      
     def HotGoalNoCheckBox(self, event):
         self.hot_goal_bonus_yes.SetValue(False)
         self.hot_goal_bonus_no.SetValue(True)
+        self.hot_goal_bonus_auto = int(0)
            
     def HotGoalYesCheckBox(self, event):
         self.hot_goal_bonus_yes.SetValue(True)
         self.hot_goal_bonus_no.SetValue(False)
+        self.hot_goal_bonus_auto = int(1)
      
     def ShotsMissedAutoAdd(self, event):
         self.shots_missed_auto += int(1)
@@ -245,10 +263,12 @@ class FrcScouting(wx.Frame):
     def PreloadedBallNoCheckBox(self, event):
         self.start_preloaded_ball_no.SetValue(True)
         self.start_preloaded_ball_yes.SetValue(False)
+        self.preloaded_ball = int(0)
         
     def PreloadedBallYesCheckBox(self, event):
         self.start_preloaded_ball_no.SetValue(False)
         self.start_preloaded_ball_yes.SetValue(True) 
+        self.preloaded_ball = int(1)
         
     def SelectedTeam(self, event):    
         self.match_scout_obj.Enable()
@@ -278,7 +298,6 @@ class FrcScouting(wx.Frame):
                      
 if __name__ == '__main__': 
     app = wx.App()
-    fs = FrcScouting(None, title='2168 Scouting & Bannna Eating Machine')
+    fs = FrcScouting(None, title='2168 Scouting')
     app.MainLoop()
-    
     
