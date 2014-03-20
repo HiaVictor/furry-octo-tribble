@@ -298,6 +298,6 @@ class FrcScouting(wx.Frame):
                      
 if __name__ == '__main__': 
     app = wx.App()
-    fs = FrcScouting(None, title='2168 Scouting')
+    fs = FrcScouting(None, title='2168 Scouting - Created by Victor "Dumbass" Papandrea')
     app.MainLoop()
     
