@@ -33,27 +33,46 @@
 				var strTeam = e.options[e.selectedIndex].value;
 				
 				var x = xmlDoc.getElementsByTagName("number");
-				var start_position = xmlDoc.getElementsByTagName("start_position");
-				var preloaded_ball = xmlDoc.getElementsByTagName("preloaded_ball");
-				var high_goals_made_auto = xmlDoc.getElementsByTagName("high_goals_made_auto");
-				var low_goals_made_auto = xmlDoc.getElementsByTagName("low_goals_made_auto");
-				var shots_missed_auto = xmlDoc.getElementsByTagName("shots_missed_auto");
-				var hot_goal_bonus_auto = xmlDoc.getElementsByTagName("hot_goal_bonus_auto");
-				var moved_bonus_auto = xmlDoc.getElementsByTagName("moved_bonus_auto");
-				var high_goals_made_tel = xmlDoc.getElementsByTagName("high_goals_made_tel");
-				var low_goals_made_tel = xmlDoc.getElementsByTagName("low_goals_made_tel");
-				var shots_missed_tel = xmlDoc.getElementsByTagName("shots_missed_tel");
-				var balls_received_tel = xmlDoc.getElementsByTagName("balls_received_tel");
-				var balls_passed_tel = xmlDoc.getElementsByTagName("balls_passed_tel");
-				var truss_shots_tel = xmlDoc.getElementsByTagName("truss_shots_tel");
-				var catches_tel = xmlDoc.getElementsByTagName("catches_tel");
-				
+							
 				for (i=0;i<x.length;i++)
 				{
-					if (x[i].childNodes[0].nodeValue == strTeam) {
+					if (x[i].childNodes[0].nodeValue == strTeam) {					
 					
+						document.write("<center><h1>Scouting Data For: " + x[i].childNodes[0].nodeValue + "</h1></center>");					
 						
-																										
+						var xmlDoc1 = loadXMLString(text); 
+						
+						var start_position = xmlDoc1.getElementsByTagName("start_position");
+						var preloaded_ball = xmlDoc1.getElementsByTagName("preloaded_ball");
+						var high_goals_made_auto = xmlDoc1.getElementsByTagName("high_goals_made_auto");
+						var low_goals_made_auto = xmlDoc1.getElementsByTagName("low_goals_made_auto");
+						var shots_missed_auto = xmlDoc1.getElementsByTagName("shots_missed_auto");
+						var hot_goal_bonus_auto = xmlDoc1.getElementsByTagName("hot_goal_bonus_auto");
+						var moved_bonus_auto = xmlDoc1.getElementsByTagName("moved_bonus_auto");
+						var high_goals_made_tel = xmlDoc1.getElementsByTagName("high_goals_made_tel");
+						var low_goals_made_tel = xmlDoc1.getElementsByTagName("low_goals_made_tel");
+						var shots_missed_tel = xmlDoc1.getElementsByTagName("shots_missed_tel");
+						var balls_received_tel = xmlDoc1.getElementsByTagName("balls_received_tel");
+						var balls_passed_tel = xmlDoc1.getElementsByTagName("balls_passed_tel");
+						var truss_shots_tel = xmlDoc1.getElementsByTagName("truss_shots_tel");
+						var catches_tel = xmlDoc1.getElementsByTagName("catches_tel");
+						
+						document.write("<center><h3>Start Position: " + start_position[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Preloaded Ball: " + preloaded_ball[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>High Goals Made Auto: " + high_goals_made_auto[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Low Goals Made Auto: " + low_goals_made_auto[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Shots Missed Auto: " + shots_missed_auto[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Hot Goal Bonus Auto: " + hot_goal_bonus_auto[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Moved Bonus Auto: " + moved_bonus_auto[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>High Goals Made Tel: " + high_goals_made_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Low Goals Made Tel: " + low_goals_made_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Shots Missed Tel: " + shots_missed_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Balls Received Tel: " + balls_received_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Balls Passed Tel: " + balls_passed_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Truss Shots Tel: " + truss_shots_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						document.write("<center><h3>Catches Tel: " + catches_tel[i].childNodes[0].nodeValue + "</h3></center>");
+						
+						
 					}
 				}
 													
@@ -72,7 +91,6 @@
 		
 		<p />
 		<p />
-		dfd
 		
 		<script>
 		
